@@ -1,0 +1,60 @@
+<div class="grid-system">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Quantity</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody id="product"></tbody>
+    <tbody>
+      <tr scope="row">
+        <td>
+          <div class="product">
+
+            <select id="product-select">
+              <option value="">Choose Product</option>
+              <option value="Pencil">Pencil</option>
+              <option value="Eraser">Eraser</option>
+              <option value="Pens">Pens</option>
+            </select>
+          </div>
+        </td>
+        <td scope="row">
+          <div class="value">
+            <select id="quantity-select">
+              <option value="">Choose Quantity</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <button (click)="addProduct()">ADD</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="option">
+    <button id="show-order" (click)="showOrder()">Show Order</button>
+    <button (click)="readOrder()">What is my Order?</button>
+  </div>
+  <div id="order-list" style="visibility:hidden;">
+    <h2>Your Order :</h2>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Product Name</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="order-items"></tbody>
+    </table>
+  </div>
+</div>

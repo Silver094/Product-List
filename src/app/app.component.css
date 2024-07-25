@@ -1,0 +1,45 @@
+.table{
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.grid-system{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+select{
+    border-radius: 15px;
+    padding:10px;
+    border-color: white;
+}
+button{
+    border-radius: 18px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;   
+    padding: 30px;
+    
+}
+.table button{
+    color: black;
+    background-color: white;
+    border-color: green;
+
+}
+.option button{
+    border:none;
+    background-color: rgb(77, 77, 231);
+    color:white;
+    margin-right: 20px;
+    
+}
